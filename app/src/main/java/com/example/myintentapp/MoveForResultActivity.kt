@@ -1,12 +1,14 @@
 package com.example.myintentapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 
-class MoveForResultActivity : AppCompatActivity(), View.onClickListener {
+class MoveForResultActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnChoose: Button
     private lateinit var rgNumber: RadioGroup
 
@@ -27,9 +29,9 @@ class MoveForResultActivity : AppCompatActivity(), View.onClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.btn_choose) {
-            if (rg_number.checkedRadioButtonId != 0) {
+            if (rgNumber.checkedRadioButtonId != 0) {
                 var value = 0
-                when (rg_number.checkedRadioButtonId) {
+                when (rgNumber.checkedRadioButtonId) {
                     R.id.rb_50 -> value = 50
 
                     R.id.rb_100 -> value = 100
