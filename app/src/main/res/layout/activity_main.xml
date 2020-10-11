@@ -6,25 +6,34 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Pindah Activity-->
     <Button
         android:id="@+id/btn_move_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/move_activity" />
+    <!-- Pindah Activity dengan Data-->
     <Button
         android:id="@+id/btn_move_activity_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/move_with_data" />
-
+    <!-- Pindah Activity dengan Object-->
     <Button
         android:id="@+id/btn_move_activity_object"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/move_with_object" />
+
+    <Button
+    android:id="@+id/btn_dial_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:text="@string/dial_number" />
 
     <Button
         android:id="@+id/btn_move_for_result"
@@ -39,5 +48,5 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/result_from_activity"
-        android:textSize="24sp"
+        android:textSize="24sp" />
 </LinearLayout>
